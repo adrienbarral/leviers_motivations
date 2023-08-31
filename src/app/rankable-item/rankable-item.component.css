@@ -1,0 +1,16 @@
+:host{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.label {
+    flex-grow: 4;
+    margin-right: 2em;
+    margin-left: 1em;
+}
+
+.emoji {
+    font-size: large;
+}

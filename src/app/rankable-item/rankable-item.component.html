@@ -1,0 +1,10 @@
+<p class="emoji" *ngIf="satisfaction_level<=1">😡</p>
+<p class="emoji" *ngIf="satisfaction_level<=3 && satisfaction_level > 1">😒</p>
+<p class="emoji" *ngIf="satisfaction_level>3">😁</p>
+<p class="label">{{this.label}}</p>
+<mat-slider *ngIf="readonly===false" min="1" max="5" step="1" value="0" discrete="true">
+    <input matSliderThumb [(ngModel)]="satisfaction_level">
+</mat-slider>
+<div>
+    <p>{{satisfaction_level}} / 5</p>
+</div>
